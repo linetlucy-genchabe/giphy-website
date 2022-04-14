@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GifsService } from '../gifs.service';
 
 @Component({
   selector: 'app-giphy',
