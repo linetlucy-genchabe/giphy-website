@@ -2,7 +2,7 @@
     <div class="row">
 
         <h4 style="color: white;">TRENDING</h4>
-        <div class="col-md-2" *ngFor="let gif of gifs">
+        <div class="col" *ngFor="let gif of gifs">
             <div class="trends">
 
                 <img [src]="gif.images.downsized.url" style="height: 200px;width: 200px;">
@@ -14,3 +14,10 @@
 
     <div><button (click)="viewMore()" style="height: 40px; width:70px;margin-top: 10px;">{{btnValue}}</button></div>
 </div>
+<style>
+    .trends {
+        display: flex;
+        float: left;
+        margin-left: 10px;
+    }
+</style>

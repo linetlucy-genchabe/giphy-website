@@ -10,7 +10,7 @@ import { SearchService } from '../search.service';
   styleUrls: ['./trending.component.css']
 })
 export class TrendingComponent implements OnInit {
-btnValue="get gifs"
+btnValue="get Gifs"
 gifs:any;
 subscription:Subscription=new Subscription;
  
@@ -24,11 +24,14 @@ subscription:Subscription=new Subscription;
   //   });
   // }
   viewMore(){
+    
     if(this.btnValue=== "get Gifs"){
+      this.btnValue = "Less Gifs"
+      console.log(this.btnValue);
     this.searchService.getMoreTrendingGifs()
     this.subscription = this.searchService.getGifs().subscribe((response:any)=>{
       this.gifs = response;
-      this.btnValue = "Less Gifs"
+      
     })
   }else if(this.btnValue ==="Less Gifs"){
     this.searchService.getTrendingGifs(5)
