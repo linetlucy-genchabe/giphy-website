@@ -1,8 +1,10 @@
-* {
-    background-color: black;
+#sbars {
+    height: 50px;
+    width: 90%;
+    background-color: white;
 }
 
-#routing {
+#searching {
     height: 48px;
     background-color: pink;
     width: 9%;

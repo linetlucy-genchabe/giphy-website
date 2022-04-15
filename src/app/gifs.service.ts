@@ -12,7 +12,7 @@ randoms=new BehaviorSubject<any>([]);
   constructor(private http:HttpClient) { }
 
   getTrendingGifs(){
-    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=XPyJEij2iuEYg6LKoAbABz2orJnRCI6d&limit=6&rating=g`).subscribe((response:any)=>{
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=XPyJEij2iuEYg6LKoAbABz2orJnRCI6d&limit=5&rating=g`).subscribe((response:any)=>{
       this.gifs.next(response.data)
     })
   }

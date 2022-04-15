@@ -1,0 +1,13 @@
+<!-- <div class="search">
+
+    <input type="text" id="sbars" placeholder="Search all the GIFS and Stickers..."><button id="searching">search</button>
+</div> -->
+
+
+<form (ngSubmit)="searchGif(gifForm)" #gifForm="ngForm">
+    <input type="text" ngModel name="searchTerm" id="sbars" />
+
+    <button type="submit" id="searching">search</button>
+</form>
+
+<!-- <div><button (click)="getGifs(9)" style="height: 40px; width:70px;">getGifs</button></div> -->

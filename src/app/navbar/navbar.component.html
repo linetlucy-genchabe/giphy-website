@@ -4,15 +4,14 @@
             <a class="navbar-brand" href="#">GIPHY</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a class="links" href="#">Home</a></li>
-            <li><a class="links" href="#">Reactions</a></li>
-            <li><a class="links" href="#">Entertainment</a></li>
-            <li><a class="links" href="#">Sports</a></li>
-            <li><a class="links" href="#">Stickers</a></li>
-            <li><a class="links" href="#">Artists</a></li>
-            <li><a class="links" href="#">:</a></li>
+            <!-- <li class="active"><a class="links" href="#" routerLink="/giphy">Giphy website</a></li> -->
+            <li><a class="links" href="#" routerLink="giphy" routerLinkActive="active">Giphy<span class ='sr-only'>(current)</span></a></li>
+            <li><a class="links" href="#" routerLink="trending" routerLinkActive="active">Trending</a></li>
 
-            <button class="buttons">Upload</button>
+            <li><a class="links" href="#" routerLink="artists" routerLinkActive="active">Artists</a></li>
+
+
+            <button class="buttons" style="margin-left: 600px;">Upload</button>
             <button class="buttons">Create</button>
 
             <!-- <button></button> -->
@@ -22,9 +21,9 @@
         </ul>
     </div>
 </nav>
-<div class="">
+<!-- <div class="">
     <input type="text" id="sbars" placeholder="Search all the GIFS and Stickers..">
-</div>
+</div> -->
 
 <style>
     .navbar-brand {
@@ -54,11 +53,5 @@
         color: white;
         background-color: black;
         font-weight: bold;
-    }
-    
-    #sbars {
-        height: 50px;
-        width: 100%;
-        background-color: white;
     }
 </style>
