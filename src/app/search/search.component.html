@@ -1,13 +1,23 @@
-<!-- <div class="search">
-
-    <input type="text" id="sbars" placeholder="Search all the GIFS and Stickers..."><button id="searching">search</button>
-</div> -->
+<div class="">
 
 
-<form (ngSubmit)="searchGif(gifForm)" #gifForm="ngForm">
-    <input type="text" ngModel name="searchTerm" id="sbars" />
+    <div class="form-outline">
+        <input type="search" id="search" #gif (keyup.enter)="search(gif.value)" class="form-control" id="sbars" placeholder="Search all the GIFs and Stickers" />
+    </div>
+    <button type="button" class="btn btn-dark" id="searching" (click)="search(gif.value)"><i class="fa fa-search" aria-hidden="true"></i>SEARCH
+  </button>
 
-    <button type="submit" id="searching">search</button>
-</form>
 
-<!-- <div><button (click)="getGifs(9)" style="height: 40px; width:70px;">getGifs</button></div> -->
+
+
+</div>
+<style>
+    #sbars {
+        width: 90%;
+    }
+    
+    #searching {
+        height: 50px;
+        width: 9%;
+    }
+</style>

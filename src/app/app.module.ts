@@ -11,7 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TrendingComponent } from './trending/trending.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { ClipsComponent } from './clips/clips.component';
-import { StoriesComponent } from './stories/stories.component';
+
 import { SearchComponent } from './search/search.component';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { SearchComponent } from './search/search.component';
     TrendingComponent,
     ArtistsComponent,
     ClipsComponent,
-    StoriesComponent,
+   
     SearchComponent,
   
 
